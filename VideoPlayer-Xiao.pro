@@ -24,25 +24,25 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 
 SOURCES += \
-        main.cpp \
-        mainwindow.cpp \
+    main.cpp \
+    mainwindow.cpp \
     videoplayer.cpp \
     cqopengldisplay.cpp \
     cffmpeg.cpp
 
 HEADERS += \
-        mainwindow.h \
+    mainwindow.h \
     videoplayer.h \
     cqopengldisplay.h \
     cffmpeg.h
 
 FORMS += \
-        mainwindow.ui
+    mainwindow.ui
 
 
 
 
-FFMPEF_PATH  = $$PWD/../ffmpeg
+FFMPEF_PATH  = $$PWD/../../ffmpeg
 INCLUDEPATH += $$FFMPEF_PATH/include
 LIBS        += $$FFMPEF_PATH/lib/avcodec.lib   \
                $$FFMPEF_PATH/lib/avdevice.lib  \
